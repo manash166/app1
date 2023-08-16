@@ -17,7 +17,7 @@ TextView tex;
     tex.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Toast.makeText(MainActivity.this, "Hello", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Hellothisisme", Toast.LENGTH_SHORT).show();
         }
     });
     }
