@@ -15,10 +15,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623">
+        app:layout_constraintVertical_bias="0.557">
 
         <EditText
             android:id="@+id/editTextText3"
@@ -31,7 +31,8 @@
             android:hint="Enter your name"
             android:inputType="text"
             android:paddingLeft="15dp"
-            android:textSize="25sp" />
+            android:textColor="#000000"
+            android:textSize="35sp" />
 
         <EditText
             android:id="@+id/editTextPhone2"
@@ -44,15 +45,16 @@
             android:hint="Enter Mobile Number"
             android:inputType="phone"
             android:paddingLeft="15dp"
-            android:textSize="25sp" />
+            android:textColor="#000000"
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/register_btn"
             android:layout_width="183dp"
             android:layout_height="58dp"
             android:background="@drawable/button_design"
             android:text="Register"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:backgroundTint="@null" />
     </LinearLayout>
 
