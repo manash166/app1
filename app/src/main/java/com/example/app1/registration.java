@@ -13,13 +13,13 @@ Button register_btn;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        register_btn = findViewById(R.id.register_btn);
-        register_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(registration.this, otp_screen.class);
-            }
-        });
+//        register_btn = findViewById(R.id.register_btn);
+//        register_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(registration.this, otp_screen.class);
+//            }
+//        });
 
     }
 }
