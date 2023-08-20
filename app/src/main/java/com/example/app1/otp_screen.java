@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class otp_screen extends AppCompatActivity {
-
-    EditText editTextNumber, editTextNumber2, editTextNumber3, editTextNumber4;
+     private String verificationId;
+    EditText editTextNumber, editTextNumber2, editTextNumber3, editTextNumber4,editTextNumber5,editTextNumber6;
     private Button verify_btn;
     TextView display_mobile;
 
@@ -25,9 +25,12 @@ public class otp_screen extends AppCompatActivity {
         editTextNumber2 = findViewById(R.id.editTextNumber2);
         editTextNumber3 = findViewById(R.id.editTextNumber3);
         editTextNumber4 = findViewById(R.id.editTextNumber4);
+        editTextNumber5 =findViewById(R.id.editTextNumber8);
+        editTextNumber5 =findViewById(R.id.editTextNumber9);
         Intent mobile_display_intent = getIntent();
         String mobile = mobile_display_intent.getStringExtra("mobile");
-        display_mobile.setText(String.format("+91" + mobile));
+       display_mobile.setText(String.format("+91" + mobile));
+//        display_mobile.setText(mobile);
         numbermove();
     }
 
@@ -80,6 +83,44 @@ public class otp_screen extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int count, int after) {
                 if (!s.toString().trim().isEmpty()) {
                     editTextNumber4.requestFocus();
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        editTextNumber4.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int count, int after) {
+                if (!s.toString().trim().isEmpty()) {
+                    editTextNumber5.requestFocus();
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        editTextNumber5.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int count, int after) {
+                if (!s.toString().trim().isEmpty()) {
+                    editTextNumber6.requestFocus();
                 }
 
             }
