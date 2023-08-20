@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="402dp"
-        android:layout_height="236dp"
+        android:layout_width="396dp"
+        android:layout_height="217dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="251dp"
         android:layout_marginEnd="2dp"
@@ -116,14 +116,38 @@
         android:id="@+id/button2"
         android:layout_width="132dp"
         android:layout_height="60dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="34dp"
         android:background="@drawable/button_design"
         android:text="Verify"
         android:textSize="25sp"
         app:backgroundTint="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toEndOf="@+id/resend_btn"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="29dp"
+        android:text="Didnt get otp?"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/resend_btn"
+        android:layout_width="110dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="67dp"
+        android:shadowColor="#BD3333"
+        android:text="RESEND"
+        android:textColor="#FBF9F9"
+        android:textColorHint="#DB3030"
+        app:backgroundTint="#A01919"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:strokeColor="#EC1616" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
