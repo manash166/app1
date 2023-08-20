@@ -23,7 +23,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 public class otp_screen extends AppCompatActivity {
      private String verificationId;
     EditText editTextNumber, editTextNumber2, editTextNumber3, editTextNumber4,editTextNumber5,editTextNumber6;
-    private Button verify_btn,resend_btn;
+     Button verify_btn,resend_btn;
     TextView display_mobile;
 
     @Override
@@ -86,12 +86,14 @@ public class otp_screen extends AppCompatActivity {
               }
           });
 
-  verify_btn.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
 
-      }
-  });
+           //for resend otp
+ resend_btn.setOnClickListener(new View.OnClickListener() {
+     @Override
+     public void onClick(View view) {
+
+     }
+ });
     }
            //for focusing next input numbermove() is used below;
     private void numbermove() {

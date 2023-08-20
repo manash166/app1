@@ -38,13 +38,13 @@ private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
               public void onClick(View view) {
 
 
-               //Testing
-                  Intent intent= new Intent(registration.this, otp_screen.class);
-                  intent.putExtra("mobile",mobilenumber.getText().toString().trim());
-                  startActivity(intent);
+              // //Testing
+//                  Intent intent= new Intent(registration.this, otp_screen.class);
+//                  intent.putExtra("mobile",mobilenumber.getText().toString().trim());
+//                  startActivity(intent);
 
                   ////firebase authentication needed
-                 // otpsend();
+                  otpsend();
               }
           });
     }
